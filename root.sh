@@ -17,8 +17,9 @@ sudo apt-get install git
 
 # setup 'Snippet Daemon' for Visual Studio Code
 
-sudo -u $USER mkdir ~/.config/Code
-sudo -u $USER mkdir ~/.config/Code/User
+mkdir ~/.config/Code
+mkdir ~/.config/Code/User
+chown -hR $USER ~/.config/Code
 cd ~/.config/Code/User
 sudo -u $USER git clone https://github.com/rahondev/vsc_snippets.git
 
